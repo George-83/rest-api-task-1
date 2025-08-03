@@ -1,12 +1,13 @@
 """
-Tests for the first scenario - 'List available users' API endpoint:
-GET /api/users?page=1
+Tests for the first scenario - 'List available users'
+API endpoint: GET /api/users?page=1
 
 Includes:
 - Validation of response status code (200)
 - JSON schema validation of the response body
 - Few JSON response assertions
-- Extraction and sorting of user data
+- Extraction of single user details (Id, Email)
+- Sorting of users by first name and printing
 """
 import jsonschema
 from utils.schema_loader import load_json_schema
@@ -16,7 +17,7 @@ class TestListUsers:
     def test_users_response_code_200(self, response_users):
         assert response_users.status_code == 200
 
-    def test_json_schema_validate(self, response_users):
+    def test_users_json_schema(self, response_users):
         schema = load_json_schema("page_1_users_schema.json")
         jsonschema.validate(response_users.json(), schema)
 

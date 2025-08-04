@@ -65,5 +65,6 @@ To install all dependencies:
 * JSON schema files live in data/json_schemas/
 * Project is designed to be scalable and extendable
 
-## 👤 Author
-Created as part of an API testing task for Endava, using Python, Pytest, and Requests.
+## 👤 Author - Georgi Bordukov, Senior Software QA Engineer
+* LinkedIn profile - https://www.linkedin.com/in/george-bordukov/
+* Created as part of an API testing task for Endava, using Python, Pytest, and Requests

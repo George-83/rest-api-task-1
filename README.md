@@ -64,3 +64,6 @@ To install all dependencies:
 * Randomized test data ensures uniqueness on POST requests
 * JSON schema files live in data/json_schemas/
 * Project is designed to be scalable and extendable
+
+## 👤 Author
+Created as part of an API testing task for Endava, using Python, Pytest, and Requests.

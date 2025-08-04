@@ -2,7 +2,7 @@
 
 This project provides automated tests for the public API [https://reqres.in](https://reqres.in), built using **Python**, **Pytest**, and the **Requests** library.
 
-## 📁 Project Structure
+<pre>## 📁 Project Structure
 
 project_root/
 ├── data/
@@ -18,3 +18,4 @@ project_root/
 ├── conftest.py             # Global fixtures used across tests
 ├── pytest.ini              # Pytest configuration (e.g., markers)
 ├── requirements.txt        # List of project dependencies
+</pre>

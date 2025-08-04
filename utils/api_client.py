@@ -19,3 +19,8 @@ class APIClient:
         headers = kwargs.pop("headers", {})
         combined_headers = {**self.default_headers, **headers}
         return requests.post(f"{self.base_url}{endpoint}", data=data, json=json, headers=combined_headers, **kwargs)
+
+    def delete(self, endpoint, **kwargs):
+        headers = kwargs.pop("headers", {})
+        combined_headers = {**self.default_headers, **headers}
+        return requests.delete(f"{self.base_url}{endpoint}", headers=combined_headers, **kwargs)

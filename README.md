@@ -67,4 +67,4 @@ To install all dependencies:
 
 ## 👤 Author - Georgi Bordukov, Senior Software QA Engineer
 * LinkedIn profile - https://www.linkedin.com/in/george-bordukov/
-* Created as part of an API testing task for Endava, using Python, Pytest, and Requests
+* Created as part of the testing task for Endava, using Python, Pytest, and Requests

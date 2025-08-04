@@ -33,7 +33,7 @@ To install all dependencies:
 ```pip install -r requirements.txt```
 
 ## 🚀 How to Run Tests
-``` pytest -v```
+```pytest -v```
 
 ## ✅ Features Covered
 1. GET list of users from page 1:

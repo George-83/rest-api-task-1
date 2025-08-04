@@ -1,6 +1,6 @@
 """
 Tests for the third scenario - 'Try to get details of user that doesn't exist'
-API endpoint: GET /api/users/999
+API endpoint: GET /api/users/{fake_user_id}
 
 Includes:
 - Validation of response status code (404)

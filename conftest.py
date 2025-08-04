@@ -1,6 +1,7 @@
 import pytest
 from utils.api_client import APIClient
 from data.payloads import generate_unique_user_payload
+import uuid
 
 # Returns the base URL for the API. Used as the foundation for all API requests
 @pytest.fixture
@@ -26,10 +27,11 @@ def response_user_id(api_client):
     return api_client.get("/api/users/3")
 
 
-# Performs a GET request to invalid user id, /api/users/999 endpoint. Returns the Response object for assertions in tests
+# Performs a GET request to fake generated user id, /api/users/{fake_user_id} endpoint. Returns the Response object for assertions in tests
 @pytest.fixture
 def response_invalid_user(api_client):
-    return api_client.get("/api/users/999")
+    fake_user_id = uuid.uuid4().hex[:9]
+    return api_client.get(f"/api/users/{fake_user_id}")
 
 
 # Performs a POST request to /api/users endpoint. Returns the Response object and payload for assertions in tests

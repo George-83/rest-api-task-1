@@ -1,4 +1,7 @@
-# This module generates unique 'first_name', 'last_name' and 'email'
+"""
+This module contains payloads.
+Generates unique 'first_name', 'last_name' and 'email' for request 'create user'
+"""
 import uuid
 
 def generate_unique_user_payload():

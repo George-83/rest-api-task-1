@@ -34,7 +34,7 @@ def response_invalid_user(api_client):
     return api_client.get(f"/api/users/{fake_user_id}")
 
 
-# Performs a POST request to /api/users endpoint. Returns the Response object and payload for assertions in tests
+# Performs a POST request to /api/users endpoint, creates a new user. Returns the Response object and the payload for assertions in tests
 @pytest.fixture
 def response_create_user(api_client):
     payload = generate_unique_user_payload()
@@ -42,9 +42,9 @@ def response_create_user(api_client):
     return response, payload
 
 
-# Performs a DELETE request to /api/users{USER_ID} endpoint.
-# Function first creates a unique new user, then takes it user_id,
-# then performs DELETE user with that user_id. Returns the Response object for assertions in tests
+# Performs a DELETE request to /api/users{USER_ID} endpoint
+# Function first creates a unique new user, then takes it user_id
+# Then performs DELETE user with that user_id. Returns the Response object for assertions in tests
 @pytest.fixture
 def response_delete_user(api_client):
     payload = generate_unique_user_payload()

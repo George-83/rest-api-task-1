@@ -1,4 +1,4 @@
-# Endava REST API Testing Project
+# REST API Test Project №1
 
 This project provides automated tests for the public API [https://reqres.in](https://reqres.in), built using **Python**, **Pytest**, and the **Requests** library.
 
@@ -72,4 +72,4 @@ To install all dependencies:
 
 ## 👤 Author - Georgi Bordukov, Senior Software QA Engineer
 * LinkedIn profile - https://www.linkedin.com/in/george-bordukov/
-* Created as part of the testing task for Endava, using Python, Pytest, and Requests
+* This project was developed as part of a technical assessment for a QA position, using Python, Pytest, and Requests

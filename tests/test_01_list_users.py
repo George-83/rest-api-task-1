@@ -10,10 +10,12 @@ Includes:
 - Sorting of users by first name and printing
 """
 import jsonschema
+import pytest
 from utils.schema_loader import load_json_schema
 
 class TestListUsers:
 
+    @pytest.mark.smoke
     def test_users_response_code_200(self, response_users):
         assert response_users.status_code == 200
 
